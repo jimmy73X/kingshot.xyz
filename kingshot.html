@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingshot: Rule Your Kingdom, Master Your Destiny</title>
+    <meta name="description" content="Lead your people through chaos in the aftermath of rebellion. Build, defend, strategize, and conquer in this immersive medieval strategy idle game.">
+    <link rel="canonical" href="https://kingshot.xyz">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        secondary: '#10b981',
+                        dark: '#1e293b',
+                        accent: '#f59e0b',
+                        light: '#f8fafc'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        title: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .download-btn {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .forum-message {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .external-link {
+            position: relative;
+            padding-right: 18px;
+        }
+        .external-link::after {
+            content: "\f35d";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0.8em;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100 font-sans text-slate-800">
+    <!-- Header Section -->
+    <header class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-gradient-to-r from-blue-500 to-indigo-600 w-10 h-10 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-crown text-white text-xl"></i>
+                </div>
+                <h1 class="text-xl md:text-2xl font-title font-bold text-slate-900">Kingshot</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#features" class="font-medium hover:text-primary transition">Features</a>
+                <a href="#gameplay" class="font-medium hover:text-primary transition">Gameplay</a>
+                <a href="#strategies" class="font-medium hover:text-primary transition">Strategies</a>
+                <a href="#hero-hall" class="font-medium hover:text-primary transition">Hero Hall</a>
+                <a href="#forum" class="font-medium hover:text-primary transition">Forum</a>
+            </nav>
+            <button class="md:hidden text-slate-700">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-blue-500/10 to-indigo-600/10 z-0"></div>
+        <div class="container mx-auto px-4 py-16 md:py-24 relative z-10">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-4xl md:text-6xl font-title font-bold mb-6 text-slate-900 leading-tight">
+                    Kingshot: Rule Your Kingdom, Master Your Destiny
+                </h1>
+                <p class="text-xl md:text-2xl text-slate-700 mb-10 max-w-2xl mx-auto">
+                    Lead your people through chaos in the aftermath of rebellion. Build, defend, strategize, and conquer in this immersive medieval strategy idle game.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
+                    <a href="https://apps.apple.com/us/app/kingshot/id6739554056" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="download-btn bg-black text-white px-6 py-4 rounded-xl flex items-center justify-center gap-3 hover:bg-slate-900 transition">
+                        <i class="fab fa-apple text-2xl"></i>
+                        <div>
+                            <div class="text-xs">Download on the</div>
+                            <div class="font-bold text-lg">App Store</div>
+                        </div>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.run.tower.defense&hl=en&pli=1" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="download-btn bg-black text-white px-6 py-4 rounded-xl flex items-center justify-center gap-3 hover:bg-slate-900 transition">
+                        <i class="fab fa-google-play text-2xl"></i>
+                        <div>
+                            <div class="text-xs">GET IT ON</div>
+                            <div class="font-bold text-lg">Google Play</div>
+                        </div>
+                    </a>
+                    <a href="https://kingshot.cn.aptoide.com/app" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="download-btn bg-indigo-600 text-white px-6 py-4 rounded-xl flex items-center justify-center gap-3 hover:bg-indigo-700 transition">
+                        <i class="fab fa-android text-2xl"></i>
+                        <div>
+                            <div class="text-xs">Download for</div>
+                            <div class="font-bold text-lg">Android</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="bg-white/80 backdrop-blur-lg p-6 rounded-2xl shadow-lg max-w-2xl mx-auto">
+                    <div class="aspect-video bg-gradient-to-br from-blue-400 to-indigo-600 rounded-xl flex items-center justify-center">
+                        <i class="fas fa-play-circle text-white text-6xl opacity-80"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Features -->
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-title font-bold mb-4 text-slate-900">Game Features</h2>
+                <p class="text-xl text-slate-600">
+                    Kingshot combines strategic tower defense with kingdom building in a medieval fantasy world ravaged by rebellion and war. Take command as governor and lead your people to glory.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card bg-gradient-to-br from-white to-slate-50 rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Strategic Tower Defense</h3>
+                    <p class="text-slate-600">
+                        Deploy defense towers and units like Barbarians and Marksmen to protect your settlement from waves of enemy attacks.
+                    </p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card bg-gradient-to-br from-white to-slate-50 rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-fort-awesome text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Kingdom Building</h3>
+                    <p class="text-slate-600">
+                        Construct and upgrade essential buildings such as Town Center, Quarry, and Hero Hall to expand your kingdom and enhance resource production.
+                    </p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card bg-gradient-to-br from-white to-slate-50 rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-user-ninja text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Hero Collection</h3>
+                    <p class="text-slate-600">
+                        Recruit powerful heroes of varying rarities through the Hero Hall gacha system, each with unique abilities to strengthen your forces.
+                    </p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card bg-gradient-to-br from-white to-slate-50 rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-coins text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Resource Management</h3>
+                    <p class="text-slate-600">
+                        Assign residents to buildings and manage resources efficiently to ensure your kingdom's growth and prosperity.
+                    </p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="feature-card bg-gradient-to-br from-white to-slate-50 rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-red-100 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-users text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Alliance System</h3>
+                    <p class="text-slate-600">
+                        Join forces with other players for protection, buffs, and collaborative conquests against common enemies.
+                    </p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="feature-card bg-gradient-to-br from-white to-slate-50 rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-cyan-100 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-dice-d20 text-cyan-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-slate-900">Diverse Game Modes</h3>
+                    <p class="text-slate-600">
+                        Engage in tower-defense gameplay with manual character control or turn-based 'Suppress' mode with up to 6 heroes against enemy stages.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Immersive Gameplay -->
+    <section id="gameplay" class="py-16 bg-gradient-to-br from-slate-50 to-slate-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-title font-bold mb-4 text-slate-900">Immersive Gameplay</h2>
+                <p class="text-xl text-slate-600">
+                    Experience the depth and excitement of Kingshot's multifaceted gameplay, combining precision shooting, tactical warfare, and strategic resource management.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Game Mode 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md">
+                    <div class="h-48 bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center">
+                        <h3 class="text-2xl font-bold text-white">Tower Defense Mode</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="mb-4 text-slate-600">
+                            Manually control your character in a 3D environment to defend against waves of enemies. Position your defenses strategically, upgrade towers, and utilize your hero's special abilities to repel invasions and protect your kingdom.
+                        </p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Deploy defense towers at strategic locations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Command units like Barbarians and Marksmen</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Calculate precision shots considering trajectory and distance</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Game Mode 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md">
+                    <div class="h-48 bg-gradient-to-r from-amber-500 to-orange-600 flex items-center justify-center">
+                        <h3 class="text-2xl font-bold text-white">Suppress Mode</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="mb-4 text-slate-600">
+                            In this turn-based mode, deploy up to 6 heroes against multiple enemy stages. Strategically select your squad composition to counter enemy strengths and exploit their weaknesses for maximum effectiveness.
+                        </p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Strategic turn-based combat system</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Create balanced teams of up to 6 heroes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Earn valuable hero shards and resources</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Game Mode 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md">
+                    <div class="h-48 bg-gradient-to-r from-emerald-500 to-teal-600 flex items-center justify-center">
+                        <h3 class="text-2xl font-bold text-white">Kingdom Management</h3>
+                    </div>
+                    <div class="p-6">
+                        <p class="mb-4 text-slate-600">
+                            Build and expand your settlement with strategic placement of buildings. Assign residents to optimize resource production, monitor their health and happiness, and establish laws to sustain your civilization.
+                        </p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Construct and upgrade vital buildings</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Assign residents as workers, hunters, or chefs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                                <span>Balance resources for sustainable growth</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Winning Strategies -->
+    <section id="strategies" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-title font-bold mb-4 text-slate-900">Winning Strategies</h2>
+                <p class="text-xl text-slate-600">
+                    Master these key strategies to progress efficiently, build a strong kingdom, and dominate your rivals in Kingshot.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <!-- Strategy 1 -->
+                <div class="bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                            <i class="fas fa-hourglass-start"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900">First 24 Hours</h3>
+                    </div>
+                    <p class="mb-6 text-slate-700">
+                        Your initial focus will set the foundation for your kingdom's growth. Complete these tasks during your first day to gain a crucial advantage:
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 text-blue-800 rounded-lg w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1">
+                                1
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Complete Chapter Missions</h4>
+                                <p class="text-slate-600">Focus on completing chapter missions quickly to unlock essential buildings and earn valuable resources.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 text-blue-800 rounded-lg w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1">
+                                2
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Upgrade Town Center</h4>
+                                <p class="text-slate-600">Prioritize Town Center upgrades to unlock new structures and units that will expand your capabilities.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 text-blue-800 rounded-lg w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1">
+                                3
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Join an Alliance</h4>
+                                <p class="text-slate-600">Find and join an active alliance early for protection buffs and collaborative advantages.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 text-blue-800 rounded-lg w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1">
+                                4
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Participate in Intel Missions</h4>
+                                <p class="text-slate-600">Complete Intel Missions and Suppress battles to earn hero shards and progression resources.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Strategy 2 -->
+                <div class="bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-green-500 text-white rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900">Resource Management</h3>
+                    </div>
+                    <p class="mb-6 text-slate-700">
+                        Efficient resource allocation will accelerate your development. Follow these best practices to optimize your kingdom's economy:
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-green-100 text-green-800 rounded-lg w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1">
+                                1
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Building Priority Order</h4>
+                                <p class="text-slate-600">Town Center → Training Camp → Research → Resource Buildings. Keep builders busy at all times.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-green-100 text-green-800 rounded-lg w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1">
+                                2
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Strategic Speed-up Usage</h4>
+                                <p class="text-slate-600">Save speed-ups for events and high-value upgrade timers to maximize efficiency.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-green-100 text-green-800 rounded-lg w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1">
+                                3
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Troop Training Sequence</h4>
+                                <p class="text-slate-600">Train Infantry first, then Archers, then Cavalry, and position Infantry in front during battles.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-green-100 text-green-800 rounded-lg w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1">
+                                4
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Resource Assignment</h4>
+                                <p class="text-slate-600">Assign residents to optimize resource production based on your current needs and development goals.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Strategy 3 -->
+                <div class="bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-purple-500 text-white rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900">Hero Development</h3>
+                    </div>
+                    <p class="mb-6 text-slate-700">
+                        Your heroes are the backbone of your military might. Implement these strategies to build a formidable hero roster:
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 text-purple-800 rounded-lg w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1">
+                                1
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Recruitment Keys Strategy</h4>
+                                <p class="text-slate-600">Accumulate 10 Recruitment Hero Keys before using them to increase chances of getting complete heroes.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 text-purple-800 rounded-lg w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1">
+                                2
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Balanced Team Composition</h4>
+                                <p class="text-slate-600">Create diverse teams with complementary abilities for different game modes and challenges.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 text-purple-800 rounded-lg w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1">
+                                3
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Focus Hero Upgrades</h4>
+                                <p class="text-slate-600">Rather than spreading resources thin, concentrate on fully upgrading your core team of heroes first.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 text-purple-800 rounded-lg w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1">
+                                4
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Complete Growth Missions</h4>
+                                <p class="text-slate-600">Prioritize growth missions that reward hero shards, especially for SR and higher rarity heroes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Strategy 4 -->
+                <div class="bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-red-500 text-white rounded-full w-10 h-10 flex items-center justify-center mr-4">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-900">Defense Optimization</h3>
+                    </div>
+                    <p class="mb-6 text-slate-700">
+                        A strong defense is as important as a powerful offense. Implement these defensive tactics to safeguard your kingdom:
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-red-100 text-red-800 rounded-lg w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1">
+                                1
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Tower Placement</h4>
+                                <p class="text-slate-600">Position defense towers strategically to maximize coverage and create effective choke points.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-red-100 text-red-800 rounded-lg w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1">
+                                2
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Unit Diversity</h4>
+                                <p class="text-slate-600">Maintain a balanced mix of melee and ranged units to counter various enemy attack strategies.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-red-100 text-red-800 rounded-lg w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1">
+                                3
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Defense Technology</h4>
+                                <p class="text-slate-600">Prioritize defense-related research in your tech tree to strengthen walls and defensive structures.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-red-100 text-red-800 rounded-lg w-8 h-8 flex items-center justify-center flex-shrink-0 mr-4 mt-1">
+                                4
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Alliance Defense</h4>
+                                <p class="text-slate-600">Coordinate with alliance members to support each other during enemy attacks with reinforcements.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Hall Section -->
+    <section id="hero-hall" class="py-16 bg-gradient-to-br from-indigo-900 to-slate-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-title font-bold mb-4">The Hero Hall</h2>
+                <p class="text-xl text-indigo-200">
+                    Recruit legendary champions to lead your forces to victory
+                </p>
+            </div>
+            
+            <div class="max-w-5xl mx-auto">
+                <div class="flex flex-col md:flex-row gap-8 items-center">
+                    <div class="md:w-1/2">
+                        <p class="text-lg mb-6">
+                            The Hero Hall is Kingshot's gacha system where you can recruit powerful heroes to join your cause. Use Platinum and Gold keys to summon heroes of varying rarities, from Common to Legendary.
+                        </p>
+                        
+                        <div class="space-y-6">
+                            <div class="bg-indigo-800/50 backdrop-blur rounded-xl p-6">
+                                <h3 class="text-xl font-bold mb-3">Advanced Recruitment</h3>
+                                <p class="text-indigo-200">
+                                    Uses Platinum keys with increased chances of Epic and Legendary heroes. A pity system rewards Mythical chests after many summons.
+                                </p>
+                            </div>
+                            
+                            <div class="bg-indigo-800/50 backdrop-blur rounded-xl p-6">
+                                <h3 class="text-xl font-bold mb-3">Epic Recruitment</h3>
+                                <p class="text-indigo-200">
+                                    Uses Gold keys with guaranteed Rare heroes and a chance to obtain Epic and higher rarities for your roster.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2">
+                        <div class="bg-gradient-to-br from-indigo-700 to-purple-800 rounded-2xl p-8 shadow-xl">
+                            <div class="text-center mb-6">
+                                <div class="bg-yellow-500 text-yellow-900 font-bold py-1 px-4 rounded-full inline-block mb-4">
+                                    Pro Tip
+                                </div>
+                                <p class="text-lg">
+                                    Accumulate 10 Recruitment Hero Keys before using them to increase your chances of getting complete heroes, including Mythic ones.
+                                </p>
+                            </div>
+                            
+                            <div class="grid grid-cols-3 gap-4">
+                                <div class="bg-indigo-900/50 rounded-xl p-4 text-center">
+                                    <div class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mx-auto mb-3" />
+                                    <h4 class="font-bold">Common</h4>
+                                    <p class="text-sm text-indigo-300">30% Chance</p>
+                                </div>
+                                <div class="bg-indigo-900/50 rounded-xl p-4 text-center">
+                                    <div class="bg-green-200 border-2 border-dashed rounded-xl w-16 h-16 mx-auto mb-3" />
+                                    <h4 class="font-bold">Rare</h4>
+                                    <p class="text-sm text-indigo-300">45% Chance</p>
+                                </div>
+                                <div class="bg-indigo-900/50 rounded-xl p-4 text-center">
+                                    <div class="bg-blue-200 border-2 border-dashed rounded-xl w-16 h-16 mx-auto mb-3" />
+                                    <h4 class="font-bold">Epic</h4>
+                                    <p class="text-sm text-indigo-300">20% Chance</p>
+                                </div>
+                                <div class="bg-indigo-900/50 rounded-xl p-4 text-center col-span-3">
+                                    <div class="bg-gradient-to-r from-purple-500 to-pink-500 border-2 border-dashed rounded-xl w-16 h-16 mx-auto mb-3" />
+                                    <h4 class="font-bold">Legendary</h4>
+                                    <p class="text-sm text-indigo-300">5% Chance</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forum Section -->
+    <section id="forum" class="py-16 bg-gradient-to-br from-slate-50 to-slate-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-title font-bold mb-4 text-slate-900 text-center">Community Forum</h2>
+                <p class="text-xl text-slate-600 mb-10 text-center">
+                    Join the conversation with other Kingshot players
+                </p>
+                
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+                    <!-- Forum Header -->
+                    <div class="bg-gradient-to-r from-blue-500 to-indigo-600 px-6 py-4">
+                        <h3 class="text-xl font-bold text-white">Post your questions and strategies</h3>
+                        <p class="text-blue-100">No registration required - anonymous posting</p>
+                    </div>
+                    
+                    <!-- Forum Form -->
+                    <div class="p-6 border-b border-slate-200">
+                        <form id="forum-form" class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-slate-700 mb-1">Name (optional)</label>
+                                <input type="text" id="name" class="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div>
+                                <label for="comment" class="block text-sm font-medium text-slate-700 mb-1">Your Message*</label>
+                                <textarea id="comment" rows="3" class="w-full p-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" required></textarea>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <p class="text-sm text-slate-500">Note: Offensive language will be automatically filtered</p>
+                                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg font-medium transition">
+                                    Post Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Forum Messages -->
+                    <div class="p-6">
+                        <h4 class="font-bold text-lg text-slate-900 mb-4">Recent Discussions</h4>
+                        
+                        <div id="messages-container" class="space-y-6">
+                            <!-- Sample Message 1 -->
+                            <div class="forum-message bg-slate-50 rounded-xl p-5">
+                                <div class="flex items-start">
+                                    <div class="bg-blue-100 text-blue-800 w-10 h-10 rounded-full flex items-center justify-center font-bold mr-4">
+                                        GK
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="flex justify-between items-center mb-2">
+                                            <h5 class="font-bold text-slate-900">GameKing42</h5>
+                                            <span class="text-sm text-slate-500">2 hours ago</span>
+                                        </div>
+                                        <p class="text-slate-700 mb-3">
+                                            What's the best hero combination for Suppress Mode? I'm stuck on Stage 7.
+                                        </p>
+                                        <button class="text-blue-500 text-sm font-medium flex items-center">
+                                            <i class="fas fa-reply mr-1"></i> Reply
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <!-- Reply -->
+                                <div class="ml-14 mt-4 pl-4 border-l-2 border-blue-200">
+                                    <div class="bg-white rounded-xl p-4">
+                                        <div class="flex items-start">
+                                            <div class="bg-green-100 text-green-800 w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm mr-3">
+                                                ST
+                                            </div>
+                                            <div class="flex-1">
+                                                <div class="flex justify-between items-center mb-1">
+                                                    <h6 class="font-bold text-slate-900">StrategyTactician</h6>
+                                                    <span class="text-xs text-slate-500">1 hour ago</span>
+                                                </div>
+                                                <p class="text-slate-700 text-sm">
+                                                    For Stage 7, I recommend 2 tanks, 2 healers and 2 ranged DPS. Make sure one healer has cleanse ability.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Sample Message 2 -->
+                            <div class="forum-message bg-slate-50 rounded-xl p-5">
+                                <div class="flex items-start">
+                                    <div class="bg-purple-100 text-purple-800 w-10 h-10 rounded-full flex items-center justify-center font-bold mr-4">
+                                        QM
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="flex justify-between items-center mb-2">
+                                            <h5 class="font-bold text-slate-900">QueenMedieval</h5>
+                                            <span class="text-sm text-slate-500">5 hours ago</span>
+                                        </div>
+                                        <p class="text-slate-700 mb-3">
+                                            Just reached Kingdom Level 10! The alliance system is game-changing. Anyone recruiting active players?
+                                        </p>
+                                        <button class="text-blue-500 text-sm font-medium flex items-center">
+                                            <i class="fas fa-reply mr-1"></i> Reply
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Sample Message 3 -->
+                            <div class="forum-message bg-slate-50 rounded-xl p-5">
+                                <div class="flex items-start">
+                                    <div class="bg-amber-100 text-amber-800 w-10 h-10 rounded-full flex items-center justify-center font-bold mr-4">
+                                        TT
+                                    </div>
+                                    <div class="flex-1">
+                                        <div class="flex justify-between items-center mb-2">
+                                            <h5 class="font-bold text-slate-900">TowerTactics</h5>
+                                            <span class="text-sm text-slate-500">Yesterday</span>
+                                        </div>
+                                        <p class="text-slate-700 mb-3">
+                                            The new update balance changes are great! Barbarians feel much more viable now in late-game defenses.
+                                        </p>
+                                        <button class="text-blue-500 text-sm font-medium flex items-center">
+                                            <i class="fas fa-reply mr-1"></i> Reply
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 text-center">
+                            <button class="text-blue-500 font-medium">
+                                <i class="fas fa-chevron-down mr-2"></i> Load More Messages
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-br from-slate-900 to-slate-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="bg-gradient-to-r from-blue-500 to-indigo-600 w-10 h-10 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-crown text-white text-xl"></i>
+                        </div>
+                        <h2 class="text-2xl font-title font-bold">Kingshot</h2>
+                    </div>
+                    <p class="text-slate-400 max-w-md">
+                        Rule your kingdom, master your destiny. Build, defend, strategize, and conquer in this immersive medieval strategy idle game.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#features" class="text-slate-400 hover:text-white transition">Features</a></li>
+                            <li><a href="#gameplay" class="text-slate-400 hover:text-white transition">Gameplay</a></li>
+                            <li><a href="#strategies" class="text-slate-400 hover:text-white transition">Strategies</a></li>
+                            <li><a href="#forum" class="text-slate-400 hover:text-white transition">Forum</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Downloads</h3>
+                        <ul class="space-y-2">
+                            <li>
+                                <a href="https://apps.apple.com/us/app/kingshot/id6739554056" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   class="external-link text-slate-400 hover:text-white transition">
+                                    iOS App Store
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://play.google.com/store/apps/details?id=com.run.tower.defense&hl=en&pli=1" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   class="external-link text-slate-400 hover:text-white transition">
+                                    Google Play
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://kingshot.cn.aptoide.com/app" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   class="external-link text-slate-400 hover:text-white transition">
+                                    Android APK
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-bold mb-4">Connect</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                            <a href="#" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-slate-700 transition">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 mt-12 pt-8 text-center text-slate-500">
+                <p>&copy; <span id="currentYear">2025</span> Kingshot.xyz All rights reserved. </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('currentYear').innerText = new Date().getFullYear();
+        
+        // Simple forum functionality
+        document.getElementById('forum-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value || 'Anonymous';
+            const comment = document.getElementById('comment').value;
+            
+            if (comment.trim() === '') return;
+            
+            // Simple profanity filter
+            const filteredComment = comment
+                .replace(/stupid/gi, '******')
+                .replace(/idiot/gi, '*****')
+                .replace(/hate/gi, '****');
+            
+            const messagesContainer = document.getElementById('messages-container');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = 'forum-message bg-slate-50 rounded-xl p-5';
+            messageDiv.innerHTML = `
+                <div class="flex items-start">
+                    <div class="bg-blue-100 text-blue-800 w-10 h-10 rounded-full flex items-center justify-center font-bold mr-4">
+                        ${name.charAt(0)}
+                    </div>
+                    <div class="flex-1">
+                        <div class="flex justify-between items-center mb-2">
+                            <h5 class="font-bold text-slate-900">${name}</h5>
+                            <span class="text-sm text-slate-500">Just now</span>
+                        </div>
+                        <p class="text-slate-700 mb-3">
+                            ${filteredComment}
+                        </p>
+                        <button class="text-blue-500 text-sm font-medium flex items-center">
+                            <i class="fas fa-reply mr-1"></i> Reply
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            // Prepend new message to the top
+            messagesContainer.prepend(messageDiv);
+            
+            // Clear form
+            document.getElementById('name').value = '';
+            document.getElementById('comment').value = '';
+        });
+    </script>
+</body>
+</html>
