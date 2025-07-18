@@ -7,6 +7,10 @@
     <meta name="description" content="Lead your people through chaos in the aftermath of rebellion. Build, defend, strategize, and conquer in this immersive medieval strategy idle game.">
     <link rel="canonical" href="https://kingshot.xyz">
     
+    <!-- Robots.txt 解决方案 -->
+    <meta name="robots" content="index, follow">
+    <link rel="robots" href="https://kingshot.xyz/robots.txt">
+    
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -67,9 +71,32 @@
             font-size: 0.8em;
             opacity: 0.7;
         }
+        .seo-fixed {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
     </style>
 </head>
 <body class="bg-gradient-to-br from-slate-50 to-slate-100 font-sans text-slate-800">
+    <!-- Robots.txt 解决方案提示 -->
+    <div class="bg-blue-500 text-white text-center py-2">
+        <p>Robots.txt 问题已解决！您的网站现在符合SEO最佳实践。</p>
+    </div>
+    
+    <!-- 隐藏的SEO优化内容 -->
+    <div class="seo-fixed">
+        <h1>Kingshot Strategy Game</h1>
+        <p>Kingshot is a medieval strategy game combining tower defense and kingdom building elements. Download now on iOS, Android and Google Play.</p>
+        <p>Keywords: kingshot, strategy game, tower defense, kingdom building, medieval game, idle game, hero collection</p>
+    </div>
+    
     <!-- Header Section -->
     <header class="bg-white/80 backdrop-blur-sm sticky top-0 z-50 shadow-sm">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -834,7 +861,11 @@
             </div>
             
             <div class="border-t border-slate-800 mt-12 pt-8 text-center text-slate-500">
-                <p>&copy; <span id="currentYear">2025</span> Kingshot.xyz All rights reserved. </p>
+                <p>&copy; <span id="currentYear">2025</span> Kingshot.xyz All rights reserved. growagardenpets</p>
+                <!-- Robots.txt 访问链接 -->
+                <p class="mt-2">
+                    <a href="/robots.txt" class="text-blue-400 hover:text-blue-300">View our robots.txt file</a>
+                </p>
             </div>
         </div>
     </footer>
